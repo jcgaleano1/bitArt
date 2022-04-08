@@ -1,0 +1,165 @@
+.iconobitart {
+    background: #000000;
+    padding-top: 15px;
+}
+
+.img_logo {
+    width: 150px;
+    height: 210px;
+    margin: 0 auto;/*Esto me centra el objeto*/
+    /*Si se quiere colocar a la izquierda, se usa la opción FLOAT LEFT o RIGHT*/
+    display: block;
+    /*Con esa opción, los objetos se posicionan de arriba a abajo*/
+    /*Si se coloca la opción inlina-flex, pocisiona uno al lado del otro*/
+
+}
+
+.main_header{
+   text-align: center;
+   width: 100%;
+   background: #000000;
+   font-size: 26px;
+   font-family: 'Lobster', cursive;
+   margin-top: -8px;
+
+}
+
+#boton_menu{
+    display: none;
+}
+
+.icono_menu{
+    padding-top: 30px;
+}
+
+header label {
+    display: none;
+    width: 100px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+}
+
+header label:hover{
+    cursor: pointer; /*Cursos de mano*/
+    color: salmon;
+}
+
+.menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu li{
+    padding: 20px 25px 0 25px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li a:hover{
+    text-decoration: overline;
+    color: salmon;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    transition: .5s;
+}
+
+.dropbtn{
+    background-color: #000000;
+    font-size: 26px;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    transition: .5s;
+}
+
+/*Pasos para colocar un submenu al menu*/
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1; /*superponer objeto*/
+    margin-top: 65px;
+}
+
+.dropdown-content a {   /*Hipervinculos del submenu*/
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+
+.dropdown-content a:hover {   /*Hipervinculos del submenu*/
+    background-color: salmon;
+    
+    }
+
+.dropdown:hover .dropbtn {
+    color: salmon;
+    text-decoration: overline;
+    }
+
+.dropdown:hover  .dropdown-content { /*Esto es para mostrar el contenido que se esta tapando*/
+    display: block; 
+}
+
+@media (max-width:920px){
+    
+    header label{
+        display: block;
+        height: 70px;
+    }
+   
+    .menu {
+        position: absolute;
+        background: salmon;
+        width: 100%;
+        margin-left: -105%;
+        transition: all 0.8s;
+        z-index: 100;
+    }
+
+    #boton_menu:checked ~ .menu{
+        margin: 0;
+    }
+
+    .menu ul{
+        display: block;
+
+    }
+
+    .menu li:hover{
+        background-color: black;
+    }
+
+    .dropbtn{
+        background-color: salmon;
+        color: white;
+    }
+
+    .dropdown-content a{
+        color: rgb(255, 255, 255);
+    }
+
+    .dropdown-content a:hover{
+        color: salmon;
+        background-color: black;
+    }
+    .dropdown:hover .dropbtn{
+        color: salmon;
+        background-color: black;
+    }
+}
+

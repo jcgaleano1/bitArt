@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../iconos/favicon.png">
+    <link rel="stylesheet" href="css_obras/estiloobras.css">
+    <link rel="stylesheet" href="../css_home/menu.css">
+    <link rel="stylesheet" href="../css_home/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Obras</title>
+</head>
+
+<body>
+
+    <header class="iconobitart">
+        <img class="img_logo" src="../iconos/iconobitart.png" alt="logobitar">
+
+    </header>
+
+    <header class="main_header">
+
+        <input type="checkbox" id="boton_menu">
+        <!--Este es un campo de entrada de datos, se puede crear el menu responsive con la ayuda de este elemento-->
+
+        <label class="icono_menu" for="boton_menu">
+            <img src="../iconos/iconomenu.png" alt="iconomenu" width="35px" height="35px">
+        </label>
+        <!--Mejora la accesibilidad al usuario por medio de inputs-->
+
+
+        <!--Menu-->
+        <nav class="menu">
+            <ul>
+                <li><a target="_blank" href="../index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+            </ul>
+
+
+            <!--Menu desplegable-->
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+
+                <div class="dropdown-content">
+                    <a href="#seccion1">Sección1</a>
+                    <a href="#info">Info</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <article class="bloquetitulo">
+        <h1>Obras de Arte</h1>
+
+        <section class="ptitulo">
+            <p> Bienvenidos a BIT ART, un sitio web de artes</p>
+
+        </section>
+    </article>
+
+
+    <section id="seccion1" class="contenidodos">
+
+        <div class="container">
+
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/chica_arte.jpg" alt="chica_arte">
+
+                <h4>Wladyslaw Theodor Benda, (1873-1948)</h4>
+
+                <p>Pintor, ilustrador y diseñador estadounidense polaco. . Es mejor recordado por sus máscaras, que se
+                    utilizaron en representaciones teatrales y de danza en todo el mundo</p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/dali.jpg" alt="dali">
+
+                <h4>PLa persistencia de la memoria, (1931)</h4>
+
+                <p>La persistencia de la memoria, conocido también como Los relojes blandos​ o Los relojes
+                    derretidos​ es un cuadro del pintor español Salvador Dalí pintado en 1931.</p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/grito.jpg" alt="grito">
+
+                <h4>El Grito (1863-1944)</h4>
+
+                <p>El grito (en noruego Skrik) es el título de cuatro cuadros del noruego Edvard Munch
+                    (1863-1944). La fuente de inspiración para El grito podría encontrarse quizás, en la
+                    atormentada vida del artista.</p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+        
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/meninas.jpg" alt="meninas">
+
+                <h4>La familia de Felipe IV, (1656)</h4>
+
+                <p>Las meninas se considera la obra maestra del Pintor del Siglo de Oro español Diego Velázquez. Acabado
+                    en 1656..</p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/autoretrato.jpg" alt="autoretrato">
+
+                <h4>Autoretrato de Vicent Van Gogh, (1889)</h4>
+
+                <p>El autorretrato de 1889 es un óleo sobre lienzo pintado por el artista postimpresionista Vincent van
+                    Gogh.</p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+
+            <div class="card">
+                <img src="./imagenesobras/imagenesobras/angeles.jpg" alt="angeles">
+
+                <h4>La Madonna Sixtina, (1513-1514)</h4>
+
+                <p>La Madonna Sixtina es un cuadro del artista renacentista italiano Rafael pintado aproximadamente
+                    entre 1513 y 1514. Se conserva en la Gemäldegalerie Alte Meister de Dresde (Alemania) </p>
+
+                <a href="#">Leer más...</a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="info">
+
+        <section class="partefooter">
+
+            <h3 class="titulomapa">
+                También puedes ubicarnos y contactarnos:
+            </h3>
+
+            <div class="contenidof">
+
+                <!--La etiqueta agrega wiggets o otras paginas web-->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.401067045963!2d-74.07242267339615!3d4.620789346291143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99f7fa84fe3b%3A0x4a37c6adedc1d243!2sBICTIA!5e0!3m2!1ses-419!2sco!4v1585845399386!5m2!1ses-419!2sco"
+                    width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+
+                <!--La etiqueta agrega formularios-->
+                <form action="">
+
+                    <h3>
+                        Contacto
+                    </h3>
+
+                    <input type="text" name="nombre" placeholder="nombre" maxlength="35">
+
+                    <input type="email" name="correo" placeholder="email">
+
+                    <input type="tel" name="telefono" placeholder="telefono">
+
+                    <textarea name="mensaje" id="textarea" placeholder="Escriba aquí su mensaje"></textarea>
+
+                    <label for="textarea"></label>
+                    <input type="button" id="boton" value="Enviar">
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <div class="contenidoiconos"> 
+
+            <hr width="85%" color="salmon">
+
+            <div class="iconosredes">
+
+                <a href="https://twitter.com/bictia" target="_blank"> <img src="../iconos/twitter.png"
+                        alt="iconotwitter"></a>
+
+                <a href="https://www.facebook.com/Bictia/?ref=br_rs" target="_blank"> <img src="../iconos/facebook.png"
+                        alt="iconofacebook"></a>
+
+                <a href="https://www.instagram.com/bictia/" target="_blank"> <img src="../iconos/instagram.png"
+                        alt="iconoinstagram"></a>
+
+         </div>
+       
+         <div class="derechos">
+
+            <p>Todos los derechos reservados @2020</p>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

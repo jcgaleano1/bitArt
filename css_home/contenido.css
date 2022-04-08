@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    /*Sirve para que ajuste los elementos sobrantes al tamaño del contenido*/
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    /*background-size: cover; Esta propiedad se usa para que la imagen abarque el tamaño del fondo*/
+}
+
+.bloquetitulo {
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: salmon;
+    padding-top: 20px;
+    /*baja un poco este contenido*/
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.parrafotitulo {
+    letter-spacing: 1px;
+    font-family: cursive;
+    color: white;
+    font-size: 26px;
+   
+}
+.bloque2 {
+    background-image: url(/imageneshome/marmol1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding-bottom: 40px;
+}
+
+.titulo2{
+    color: salmon;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: cursive;
+    text-decoration: underline ;
+}
+
+.parrafo{
+   
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    }
+
+.parrafotitulo2{
+    order: 2;
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 28px;
+    padding-top: 30px;
+   
+}
+.videopintores{
+    order: 1;
+}
+
+.iconoart {
+    padding-top: 55px;
+}
+
+
+.fotografia {
+    text-align: center;
+    font-size: 40px;
+    color: salmon;
+    padding-bottom: 15%;
+}
+
+.fotobob {
+    width: 800px;
+    display: block;
+    margin: 135px auto;
+    border-radius: 15px;
+}
+
+
+
+@media (max-width:1140px) {
+    .fotobob {
+        max-width: 570px;
+    }
+    
+    .bloquetitulo {
+        font-size: 35px;
+        letter-spacing: 1px;
+        color: salmon;
+        padding-top: 20px;
+        
+        text-align: center;
+        font-family: 'Lobster', cursive;
+    }
+    .parrafotitulo {
+               letter-spacing: 1px;
+        font-family: cursive;
+        color: white;
+        font-size: 23px;
+    }
+    .parrafotitulo2 hr{
+        width: 400px;
+    }
+    .parrafotitulo2 {
+        font-size: 24px;
+    }
+    
+   
+    .videopintores video{
+        width: 420;
+        height: 300;
+    }
+    
+   
+}
+
+
+@media (max-width:1000px) {
+    .parrafo{
+           display: flex;
+        flex-flow: row wrap;
+        
+        }
+    .fotobob {
+        max-width: 400px;
+    }
+        
+    .bloquetitulo {
+        font-size: 31px;
+        letter-spacing: 1px;
+        color: salmon;
+        padding-top: 20px;
+        
+        text-align: center;
+        font-family: 'Lobster', cursive;
+    }
+    .parrafotitulo {
+        letter-spacing: 1px;
+        font-family: cursive;
+        color: white;
+       
+    }
+    .parrafotitulo2 hr{
+        width: 700px;
+    }
+    .parrafotitulo2 {
+        font-size: 30px;
+        order: 1;
+    }
+    .videopintores{
+        order: 2;
+    }
+   
+    .videopintores video{
+        width: 420;
+        height: 300;
+
+    }
+    
+}
+
+@media (max-width:700px) {
+                   
+    .fotobob {
+        max-width: 400px;
+    }
+         
+    .parrafotitulo {
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 22px;   
+    } 
+  .parrafotitulo2 hr{
+        width: 400px;
+    }
+    .parrafotitulo2 {
+        font-size: 24px;
+        order: 1;
+    }
+    .videopintores{
+        order: 2;
+    }
+   
+    .videopintores video{
+        width: 420px;
+        height: 300px;
+
+    }
+    
+}
+    
+    

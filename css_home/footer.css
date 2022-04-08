@@ -1,0 +1,113 @@
+footer{
+    width: 100%;
+    background-color: black;
+   display: flex;
+   flex-flow: row wrap;
+   
+}
+
+.partefooter {
+    background-color: salmon;
+    padding: 50px;
+    width: 100%;
+}
+
+.contenidof{
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.titulomapa{
+    color: black;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 35px 0 15px 0;
+    text-decoration: underline black;
+}
+
+iframe{
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+form {
+    margin-left: 50px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 4);
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+textarea {
+    /*elementos responsivos*/
+    
+    min-width: 100px;
+    max-height: 80px;
+    /*min-width: 200%;*/
+    
+}
+
+#boton {
+    background: salmon;
+    color: black;
+    padding: 20px;
+}
+
+#boton:hover {
+    background: white;
+    color: salmon;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+/*Iconos*/
+
+
+.contenidoiconos {
+  width: 100%;  
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 20px;
+   padding-top: 90px;
+}
+
+
+.iconosredes img {
+    padding: 15px;
+}
+
+.derechos {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+  
+  
+}

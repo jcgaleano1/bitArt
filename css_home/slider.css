@@ -1,0 +1,72 @@
+.slider-portada {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    list-style: none;
+    position: relative;
+    /*la posicion principal de los otros elementos*/
+    display: flex; /*coloca elementos en bloque pero hace cajas flexibles para acomodarlas con responsive, de izquierda a derecha*/
+    justify-content: center;/*propiedad que funciona solo con el display flex y centra*/
+    align-items: flex-end;
+}
+
+.slider-portada img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.slider-portada input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    margin: 12px;
+}
+
+.slider-portada input[type="radio"]:checked ~ img{
+    opacity: 1;
+}
+
+/*Responsive escritorio*/
+@media (max-width:600px){
+    .slider-portada{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/*dispositivos pequeños*/
+@media (min-width:600px){
+    .slider-portada{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/*Dispositivos medianos*/
+@media (min-width:768px){
+    .slider-portada{
+        width: 100%;
+        height: 420px;
+    }
+
+/*Dispositivos grandes*/
+}
+@media (min-width:992px){
+    .slider-portada{
+        width: 100%;
+        height: 440px;
+    }
+}
+
+/*Dispositivos muy grandes*/
+
+@media (min-width:1200px){
+    .slider-portada{
+        width: 100%;
+        height: 600px;
+        }
+}
